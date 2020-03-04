@@ -1,15 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'
 
-import Header from './components/landing-page/Header'
-import BarberList from './components/landing-page/BarberList'
+import LandingPage from './components/LandingPage'
 
 function App() {
   return (
     <div>
       <Router>
-        <Header />
-        <BarberList />
+        <LandingPage />
       </Router>
     
     </div>

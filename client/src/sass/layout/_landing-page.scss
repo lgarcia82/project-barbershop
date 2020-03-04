@@ -27,3 +27,12 @@
     text-align: center;
   }
 }
+
+.Barbers {
+  position: relative;
+  height: auto; 
+  background-color: #e2e2e2;
+  padding: 15% 0;
+
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
