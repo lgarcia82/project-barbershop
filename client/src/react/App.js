@@ -3,6 +3,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 
 import Header from './components/landing-page/Header'
 import BarberList from './components/landing-page/BarberList'
+import Footer from './components/landing-page/Footer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Header />
         <BarberList />
+        <Footer />
       </Router>
     
     </div>
