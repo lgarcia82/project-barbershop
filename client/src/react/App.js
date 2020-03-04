@@ -1,9 +1,15 @@
 import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom'
+
+import Header from './components/landing-page/Header'
 
 function App() {
   return (
     <div>
-      Start
+      <Router>
+        <Header />
+      </Router>
+    
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.Header {
+  position: relative;
+  height: 80vh;
+  background-image: linear-gradient(to right bottom, rgba($color-light,0.8), rgba($color-dark, 0.8)), url(../../images/barbershop2.jpg);
+  background-size: cover;
+  background-position: top;
+  
+  clip-path: polygon(0 0, 100% 0, 100% 72vh, 0 100%);
+
+  &_Logo-Box{
+    position: absolute;
+    top: 60px;
+    left: 80px;
+  }
+
+  &_Logo{
+    height: 8vw;
+    border-radius: 22%;
+    transform: rotate(-15deg);
+  }
+
+  &_Text-Box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
