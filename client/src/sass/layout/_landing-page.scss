@@ -36,3 +36,9 @@
 
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
+
+.Footer {
+  position: relative;
+  background-color: $color-light;
+  height: 30vh;
+}
