@@ -26,5 +26,5 @@ yarn-error.log*
 debug.log
 .vscode
 
-# text editor formatter
+# text editor formatters
 .prettierrc
