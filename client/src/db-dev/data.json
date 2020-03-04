@@ -1,0 +1,39 @@
+{
+  "barbers": [
+    {
+      "id": 1,
+      "name": "Johnny Styles",
+      "status": "Working"
+    },
+    
+    {
+      "id": 2,
+      "name": "Jimmy Cutz",
+      "status": "Working"
+    },
+    
+    {
+      "id": 3,
+      "name": "Connie Clips",
+      "status": "Off"
+    },
+    
+    {
+      "id": 4,
+      "name": "Sammy Blades",
+      "status": "Working"
+    },
+    
+    {
+      "id": 5,
+      "name": "Odd dude",
+      "status": "Off"
+    },
+
+    {
+      "id":6,
+      "name": "Odd dude",
+      "status": "Off"
+    }
+  ]
+}
