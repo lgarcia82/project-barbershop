@@ -33,3 +33,10 @@ $ git checkout -b wip-fe-[your-new-webpage]
 ```sh
 $ git checkout -b feat-be-[your-new-endpoints]
 ```
+### git Commit Message Formatting:
+| Type | Message |
+| --- | --- |
+| New feature | `feature: my description of my new feature` |
+| Refactor / Cleanup | `refactor: my description of changes made` |
+| Bug fix | `fix: my description of the problem and resolution` |
+| Required changes | `chore: my description of the required updates or features` |
