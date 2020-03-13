@@ -5,7 +5,7 @@ import faker from 'faker'
 const BarberCard = props => {
   return (
     <div className='col-1-2'>
-      <Link to='/barbers'>
+      <Link to='/barber'>
         <div className='BarberCard'>
           <div className='BarberCard_Image-Box'>
             <img

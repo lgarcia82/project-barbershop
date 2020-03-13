@@ -7,9 +7,9 @@ import Footer from './landing-page/Footer'
 function LandingPage() {
   return (
     <div>
-        <Header />
-        <BarberList />
-        <Footer />
+      <Header />
+      <BarberList />
+      <Footer />
     </div>
   );
 }

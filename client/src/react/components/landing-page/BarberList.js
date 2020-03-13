@@ -1,45 +1,26 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import BarberCard from './BarberCard'
 
 import data from '../../../db-dev/data.json'
 
-class BarberList extends React.Component {
-  state = { barbers: [], length: 0 }
+function BarberList(){
+  const [barbers, setBarbers] = useState([])
+  const [length, setLength] = useState(0)
 
-  componentDidMount () {
-    let barberData = data
-
-    this.setState({
-      barbers: barberData.barbers,
-      length: barberData.barbers.length
-    })
+  const fetchBarbers = () => {
+    const barberData = data.barbers
+    setBarbers(barberData)
+    setLength(barberData.length)
   }
 
-  render () {
-    return (
-      <div className='Barbers-Container'>
-        <div className='Barbers'>
-          {this.state.barbers.map((barber, i) => {
-            let length = this.state.length
-            if (length % 2 !== 0) {
-              if (i < length - 1) {
-                return i % 2 ? this.renderBarbers(i, false) : ''
-              } else {
-                return this.renderBarbers(i, true)
-              }
-            } else {
-              return i % 2 ? this.renderBarbers(i, false) : ''
-            }
-          })}
-        </div>
-      </div>
-    )
-  }
+  useEffect(() =>{
+    fetchBarbers()
+  }, [])
 
-  renderBarbers (index, lastItem) {
-    let barberSub = [this.state.barbers[index - 1], this.state.barbers[index]]
-
+  const renderBarbers = (index, lastItem) => {
+    let barberSub = [barbers[index - 1], barbers[index]]
+    console.log(barberSub)
     if (lastItem) {
       let barber = barberSub[1]
       return (
@@ -57,6 +38,24 @@ class BarberList extends React.Component {
       )
     }
   }
+
+  return (
+    <div className='Barbers-Container'>
+      <div className='Barbers'>
+        { barbers.map(( barber ) => {
+          if (length % 2 !== 0) {
+            if (barber.id < length - 1) {
+              return barber.id % 2 ? renderBarbers(barber.id, false) : ''
+            } else {
+              return renderBarbers(barber.id, true)
+            }
+          } else {
+            return barber.id % 2 ? renderBarbers(barber.id, false) : ''
+          }
+        })}
+      </div>
+    </div>
+  )
 }
 
 export default BarberList
