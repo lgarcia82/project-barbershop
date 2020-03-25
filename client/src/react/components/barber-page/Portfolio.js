@@ -3,7 +3,7 @@ import React from 'react'
 
 function Portfolio () {
   return(
-    <div>
+    <div className = 'Portfolio-Container'>
       Portfolio
     </div>
   )

@@ -1,14 +1,15 @@
 import React from 'react';
 
-import Images from './barber-page/Images'
+import Schedule from './barber-page/Schedule'
 import Portfolio from './barber-page/Portfolio'
 
-function BarberPage() {
+function BarberPage(props) {
   return (
     <div>
       
+      <Schedule/>
       <Portfolio/>
-      <Images/>
+      
     </div>
   );
 }

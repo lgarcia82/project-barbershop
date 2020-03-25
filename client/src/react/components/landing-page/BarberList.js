@@ -20,7 +20,7 @@ function BarberList(){
 
   const renderBarbers = (index, lastItem) => {
     let barberSub = [barbers[index - 1], barbers[index]]
-    console.log(barberSub)
+    
     if (lastItem) {
       let barber = barberSub[1]
       return (
@@ -31,7 +31,7 @@ function BarberList(){
     } else {
       return (
         <div className='row'>
-          {barberSub.map(barber => {
+          {barberSub.map( barber => {
             return <BarberCard key={barber.id} barber={barber} />
           })}
         </div>
@@ -42,7 +42,7 @@ function BarberList(){
   return (
     <div className='Barbers-Container'>
       <div className='Barbers'>
-        { barbers.map(( barber ) => {
+        { barbers.map( barber => {
           if (length % 2 !== 0) {
             if (barber.id < length - 1) {
               return barber.id % 2 ? renderBarbers(barber.id, false) : ''
