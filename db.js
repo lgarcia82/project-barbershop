@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const config = require('./config')
 mongoose.Promise = global.Promise;
-const uri = `mongodb+srv://jgarcia:DJfpHi1eg27TUOAg@cluster0-wlsen.mongodb.net/test?retryWrites=true&w=majority`;
+const uri = config.db;
 
 const connection = mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
