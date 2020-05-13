@@ -1,12 +1,12 @@
 const mongoose = require('mongoose').set('debug', true);
 
 const EmployeeSchema = new mongoose.Schema({
+  name: String,
+  bio: String,
   profilePic: String,
   schedule: String,
-  portfolio: String,
-  location: String,
   status: String,
-  servicesId: String
+  services: Array
 },
 {
   collection: 'employees'
