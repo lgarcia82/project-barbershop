@@ -1,0 +1,40 @@
+{
+  "schedule": [
+    {
+      "monday": {
+        "start": 1100,
+        "end": 1700
+      }
+    },
+    {
+      "tuesday": {
+        "start":1100,
+        "end": 1700
+      }
+    },
+    {
+      "wednesday": {
+        "start": 1100,
+        "end": 1700
+      }
+    },
+    {
+      "thursday": {
+        "start": 1100,
+        "end": 1700
+      }
+    },
+    {
+      "friday": {
+        "start": 1100,
+        "end": 1700
+      }
+    },
+    {
+      "saturday": {
+        "start": 1100,
+        "end": 1700
+      }
+    }
+  ]
+}
